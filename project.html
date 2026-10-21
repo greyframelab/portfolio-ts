@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js enter-wipe">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project — Toni Santafé</title>
+<meta name="description" content="Project case by Toni Santafé, UI/UX and visual designer for games.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="assets/brand/favicon.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>document.documentElement.classList.remove('no-js');</script>
+<script>setTimeout(function(){var h=document.documentElement;h.classList.remove('enter-wipe');var l=document.querySelector('.loader');if(l&&!window.Core)l.style.display='none';},5000);</script>
+</head>
+<body data-page="project">
+
+<div class="wipe" aria-hidden="true">
+  <div class="wipe__panel wipe__panel--a"></div>
+  <div class="wipe__panel wipe__panel--b"></div>
+  <div class="wipe__label display"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><div class="cursor__ring"><span class="cursor__label">Next</span></div><div class="cursor__dot"></div></div>
+
+<header class="nav">
+  <a class="nav__brand" href="index.html" data-transition="Home" aria-label="Toni Santafé — home">
+    <img src="assets/brand/brand.png" alt="">
+    <span class="mono">Toni Santafé</span>
+  </a>
+  <nav class="nav__links mono" aria-label="Sections">
+    <a href="index.html#work" data-transition="Selected work"><b>←</b>All projects</a>
+  </nav>
+  <div class="nav__right">
+    <span class="mono dim nav__clock">BCN <span data-clock>--:--</span></span>
+    <button class="btn-menu mono" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>Menu <span class="bars"><i></i><i></i></span></button>
+  </div>
+  <div class="nav__progress"><i></i></div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <button class="menu__close" type="button" data-menu-close>Close ✕</button>
+  <ul class="menu__list">
+    <li><a class="display" href="index.html" data-transition="Home"><small>00</small><span>Home</span></a></li>
+    <li><a class="display" href="index.html#work" data-transition="Selected work"><small>01</small><span>Projects</span></a></li>
+    <li><a class="display" href="index.html#about" data-transition="About"><small>02</small><span>About</span></a></li>
+    <li><a class="display" href="index.html#resume" data-transition="Resume"><small>03</small><span>Resume</span></a></li>
+    <li><a class="display" href="https://www.linkedin.com/in/antonio-santafe-castellar/" target="_blank" rel="noopener"><small>04</small><span>LinkedIn</span></a></li>
+  </ul>
+  <div class="menu__foot mono">
+    <a href="mailto:santafecreativestudio@gmail.com">santafecreativestudio@gmail.com</a>
+    <a href="tel:+34600645686">+34 600 645 686</a>
+    <span>© Toni Santafé <span data-year>2026</span></span>
+  </div>
+</div>
+
+<main data-project>
+  <section class="p-hero">
+    <div class="hud-grid" aria-hidden="true"></div>
+    <div class="p-hero__crumbs mono" style="position:relative">
+      <span class="tag" data-p-crumb>Project</span>
+      <span class="dim" data-p-index>00 / 00</span>
+    </div>
+    <h1 class="p-title display" data-p-title></h1>
+    <p class="p-sub display acid" data-p-sub></p>
+    <div class="p-meta" data-p-meta></div>
+  </section>
+
+  <figure class="p-cover" data-p-cover><img alt="" src="" data-p-cover-img></figure>
+
+  <section class="p-intro">
+    <span class="mono dim tag">Overview</span>
+    <div data-p-text></div>
+  </section>
+
+  <section class="p-gallery" data-p-gallery aria-label="Project images"></section>
+
+  <a class="p-next" href="#" data-p-next data-cursor="Next">
+    <div class="p-next__img"><img alt="" src="" data-p-next-img></div>
+    <div class="section-index mono"><span class="tag">Next project</span><span class="dim" data-p-next-idx>00</span></div>
+    <h2 class="p-next__title display" data-p-next-title></h2>
+    <span class="mono dim" data-p-next-meta></span>
+    <div class="p-next__bar"><i></i></div>
+  </a>
+</main>
+
+<aside class="p-rail" aria-hidden="true">
+  <span class="mono dim" data-rail-num>000</span>
+  <div class="p-rail__track"><i></i></div>
+  <span class="mono acid">Scroll</span>
+</aside>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/project.js"></script>
+</body>
+</html>
